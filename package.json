@@ -1,0 +1,63 @@
+{
+  "name": "@oracle/trace-propagator",
+  "version": "0.2.0",
+  "description": "Utility for building headers for various formats of tracing propagation",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "rm -rf dist && mkdir dist && tsc",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.oracledatacloud.com/odc-commons/trace-propagator.git"
+  },
+  "keywords": [
+    "tracing",
+    "typescript",
+    "utilities"
+  ],
+  "author": "Ben Knear",
+  "license": "UPL-1.0",
+  "publishConfig": {
+    "registry": "https://bin.oracledatacloud.com/artifactory/api/npm/odc-npm/"
+  },
+  "engines": {
+    "node": ">=14.15.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "jest": "^27.0.4",
+    "ts-jest": "^27.0.3",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.2"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".test.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "**/*.(t|j)s"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 40,
+        "functions": 40,
+        "lines": 50,
+        "statements": 60
+      }
+    },
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
+}
