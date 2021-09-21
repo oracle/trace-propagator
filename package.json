@@ -1,6 +1,6 @@
 {
   "name": "@oracle/trace-propagator",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Utility for building headers for various formats of tracing propagation",
   "main": "dist/index.js",
   "files": [
