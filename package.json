@@ -23,9 +23,6 @@
   ],
   "author": "Ben Knear",
   "license": "UPL-1.0",
-  "publishConfig": {
-    "registry": "https://bin.oracledatacloud.com/artifactory/api/npm/odc-npm/"
-  },
   "engines": {
     "node": ">=14.15.0"
   },
