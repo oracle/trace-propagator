@@ -1,5 +1,7 @@
 # Trace Propagator
 
+<img src="https://img.shields.io/npm/v/@oracle/trace-propagator.svg?color=informational" alt="trace-propagator"/>
+
 This utility will construct the various trace propagation formats. All you need to do is give it a valid `traceId` and `spanId`.
 
 ## Installation
